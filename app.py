@@ -17,7 +17,7 @@ if st.button("Generate"):
             response = openai.Completion.create(
     model="code-davinci-002",
     prompt=f"<!DOCTYPE html> <html> <head></head> <body> \n<script>\n/* {prompt} */\n",
-    temperature=0.05,
+    temperature=0.04,
     max_tokens=256,
     top_p=1,
     frequency_penalty=0.62,
