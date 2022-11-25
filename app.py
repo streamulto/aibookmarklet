@@ -8,7 +8,7 @@ import re
 import urllib
 responses = ["Making pancakes","Going on StackOverflow","Watching TechWithTim","Getting a latte"]
 st.title('Epic Bookmarklet Creator')
-openai.api_key=st.text_input("Enter your API_KEY here (don't worry we don't store anything): ")
+openai.api_key=st.text_input("Enter your API_KEY here (don't worry we don't store anything): ",type="password")
 prompt = "/* "+st.text_input("Enter what you would like your bookmarklet to do here")+" */"
 if st.button("Generate"):
     try:
